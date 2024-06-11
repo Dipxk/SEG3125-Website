@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Haruki Pet Service Booking Confirmation</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/kalam.css">
+    <style>
+        .confirmation-text {
+            font-size: 1.2em; /* Increase the font size */
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="index.html">Haruki Pet Service</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                <li class="nav-item"><a class="nav-link" href="experts.html">Meet the Experts</a></li>
+                <li class="nav-item"><a class="nav-link btn" href="book.html">Book an Appointment</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container text-center mt-5 mb-5">
+        <div class="row">
+            <div class="col-md-5 text-left">
+                <h2>Confirmation</h2>
+                <p class="confirmation-text">Your reservation request has been received and confirmed! Thank you for choosing Haruki Pet Service. You will receive a confirmation email shortly with further details. We look forward to providing the best care for your furry friend!</p>
+                <h3 class="mt-5">Booking Details</h3>
+                <p class="confirmation-text"><strong>Booking Number:</strong> 01010</p>
+                <p class="confirmation-text"><strong>Service:</strong> <span id="service">Chosen Service</span></p>
+                <p class="confirmation-text"><strong>Date:</strong> <span id="date">Chosen Date</span></p>
+                <p class="confirmation-text"><strong>Time:</strong> <span id="time">Chosen Time</span></p>
+                <p class="confirmation-text"><strong>Dog Expert:</strong> <span id="expert">Chosen Expert</span></p>
+            </div>
+            <div class="col-md-2"></div> <!-- Empty column for spacing -->
+            <div class="col-md-5 text-right">
+                <img src="assets/images/AppoinmentConfrem.png" alt="Booking Image" class="img-fluid">
+            </div>
+        </div>
+    </div>
+    <footer class="text-center">
+        <div class="footer-content">
+            <div class="footer-left">
+                <p>Office Hours:</p>
+                <p>Saturday to Friday: 8am - 8pm</p>
+            </div>
+            <div class="footer-center">
+                <p>Address: 0101 Airport Avenue</p>
+            </div>
+            <div class="footer-right">
+                <p>Telephone num: 0120300987</p>
+            </div>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        function getQueryParams() {
+            let params = {};
+            let queryString = window.location.search.substring(1);
+            let regex = /([^&=]+)=([^&]*)/g;
+            let m;
+            while (m = regex.exec(queryString)) {
+                params[decodeURIComponent(m[1])] = decodeURIComponent(m[2]);
+            }
+            return params;
+        }
+
+        $(document).ready(function() {
+            let params = getQueryParams();
+            $('#service').text(params['service']);
+            $('#date').text(params['date']);
+            $('#time').text(params['time']);
+            $('#expert').text(params['expert']);
+        });
+    </script>
+</body>
+</html>

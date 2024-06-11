@@ -1,0 +1,176 @@
+/* Define the light brown background color and font family */
+body {
+    background-color: #EDCB98;
+    font-family: 'Kalam', cursive;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Apply Kalam font to all headings */
+h1, h3 {
+    font-family: 'Kalam', cursive;
+}
+
+/* Define the black background color and padding for the navbar */
+.navbar {
+    background-color: #000000;
+    padding: 1rem 1rem;
+}
+
+/* Apply yellow color and increased font size to navbar brand */
+.navbar-brand {
+    color: #FFC107 !important;
+    font-size: 1.2rem;
+}
+
+/* Apply yellow color and increased font size to navbar links */
+.navbar-nav .nav-link {
+    color: #FFC107 !important;
+    font-size: 1.1rem;
+    margin: 0 10px;
+}
+
+/* Apply yellow color and increased font size to navbar buttons */
+.navbar-nav .nav-link.btn {
+    background-color: #643535;
+    color: #FFC107 !important;
+    font-size: 1.1rem;
+    margin: 0 10px;
+}
+
+/* Apply darker background color and yellow text color to navbar buttons on hover */
+.navbar-nav .nav-link.btn:hover {
+    background-color: #5a2c2c;
+    color: #FFC107 !important;
+}
+
+/* Apply black background color, yellow text color, and increased font size to primary buttons */
+.btn-primary {
+    background-color: #000000;
+    border-color: #000000;
+    color: #FFC107 !important;
+    margin-top: 20px;
+}
+
+/* Apply darker background color, darker border color, and yellow text color to primary buttons on hover */
+.btn-primary:hover {
+    background-color: #333333;
+    border-color: #333333;
+    color: #FFC107 !important;
+}
+
+/* Apply background color, border color, and yellow text color to secondary buttons */
+.btn-secondary {
+    background-color: #643535;
+    border-color: #643535;
+    color: #FFC107 !important;
+    margin-top: 20px;
+}
+
+/* Apply darker background color, darker border color, and yellow text color to secondary buttons on hover */
+.btn-secondary:hover {
+    background-color: #5a2c2c;
+    border-color: #5a2c2c;
+    color: #FFC107 !important;
+}
+
+/* Apply black background color and yellow text color to footer */
+footer {
+    background-color: #000000;
+    color: #FFC107;
+    font-size: 1.1em;
+    padding: 10px 0;
+    margin-top: auto;
+}
+
+/* Apply flex layout and space-between alignment to footer content */
+footer .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+/* Apply left alignment to footer left content */
+.footer-left {
+    text-align: left;
+}
+
+/* Apply right alignment to footer right content */
+.footer-right {
+    text-align: right;
+}
+
+/* Apply background color, padding, border radius, and margin to section backgrounds */
+.section-background {
+    background-color: #BC8757;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+/* Apply bottom margin to section titles */
+h3.section-title {
+    margin-bottom: 10px;
+}
+
+/* Apply no bottom margin to paragraphs and unordered lists */
+p, ul {
+    margin-bottom: 0;
+}
+
+/* Apply left padding to unordered lists */
+ul {
+    padding-left: 20px;
+}
+
+/* Apply inline block display, maximum width, and word break to wrapped text */
+.wrapped-text {
+    display: inline-block;
+    max-width: 100%;
+    word-break: break-word;
+}
+
+/* Apply vertical line divider with black color and auto margin */
+.divider {
+    height: 100%;
+    width: 1px;
+    background-color: #000;
+    margin: auto;
+}
+
+/* Apply flex layout and center alignment to expert info */
+.expert-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/* Apply left margin to title text */
+.title-text {
+    margin-left: 10px;
+    font-size: 1rem;
+}
+
+/* Define the font face for BespokeStencil */
+@font-face {
+  font-family: 'BespokeStencil';
+  src: url('../fonts/BespokeStencil-Variable.woff2') format('woff2'),
+       url('../fonts/BespokeStencil-Variable.woff') format('woff'),
+       url('../fonts/BespokeStencil-Variable.ttf') format('truetype');
+  font-weight: 300 800;
+  font-display: swap;
+  font-style: normal;
+}
+
+/* Apply Bespoke Stencil font to all headings */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'BespokeStencil', sans-serif;
+}
+
+/* Apply Kalam font to navbar brand "Haruki Daycare" */
+.navbar-brand {
+    font-family: 'Kalam', cursive;
+}

@@ -1,0 +1,10 @@
+@font-face {
+  font-family: 'Kalam';
+  src: url('../fonts/Kalam-Variable.woff2') format('woff2'),
+       url('../fonts/Kalam-Variable.woff') format('woff'),
+       url('../fonts/Kalam-Variable.ttf') format('truetype'),
+       url('../fonts/Kalam-Variable.eot') format('embedded-opentype');
+  font-weight: 300 700;
+  font-display: swap;
+  font-style: normal;
+}
